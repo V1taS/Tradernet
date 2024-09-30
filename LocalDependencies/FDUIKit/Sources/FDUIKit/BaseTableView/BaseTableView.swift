@@ -117,7 +117,7 @@ public final class BaseTableView: UIView, BaseTableViewInput {
   }
   
   private lazy var loaderView: UIActivityIndicatorView = {
-    let view = UIActivityIndicatorView(style: .large)
+    let view = UIActivityIndicatorView()
     view.isHidden = true
     return view
   }()

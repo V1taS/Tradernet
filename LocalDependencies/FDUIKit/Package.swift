@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "FDUIKit",
   defaultLocalization: "en",
-  platforms: [.iOS(.v13)],
+  platforms: [.iOS(.v12)],
   products: [
     .library(
       name: "FDUIKit",

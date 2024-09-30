@@ -30,7 +30,7 @@ public extension BaseTableViewConfiguration {
   static let `default` = BaseTableViewConfiguration(style: .plain)
   
   static let grouped = BaseTableViewConfiguration(
-    style: .insetGrouped,
+    style: .grouped,
     directionalLayoutMargins: .init(
       top: .zero,
       leading: .leastNonzeroMagnitude,

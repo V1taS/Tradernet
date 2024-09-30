@@ -21,7 +21,7 @@ public extension InfoPlist {
       "VALID_ARCHS": .string("arm64"),
       "DTPlatformVersion": .string("\(Constants.iOSTargetVersion)"),
       "DTPlatformName": .string("iphoneos"),
-      "TARGETED_DEVICE_FAMILY": .string("1,2"),
+      "TARGETED_DEVICE_FAMILY": .string("1"),
       "CFBundleLocalizations": .array([
         .string("en"),
         .string("ru")
@@ -72,15 +72,7 @@ public extension InfoPlist {
       "NSCameraUsageDescription": .string("Please provide access to the Camera"),
       "NSPhotoLibraryUsageDescription": .string("Please provide access to the Photo Library"),
       "UIApplicationSceneManifest": .dictionary([
-        "UIApplicationSupportsMultipleScenes": .boolean(false),
-        "UISceneConfigurations": .dictionary([
-          "UIWindowSceneSessionRoleApplication": .array([
-            .dictionary([
-              "UISceneConfigurationName": .string("Default Configuration"),
-              "UISceneDelegateClassName": .string("\(Constants.appNameRelease).SceneDelegate")
-            ])
-          ])
-        ])
+      "UIApplicationSupportsMultipleScenes": .boolean(false)
       ]),
       "UIKeyboardDoesNotSupportHardwareKeyboard": .boolean(true),
       "UITextInputTraitSoftwareKeyboardBehavior": .integer(1),

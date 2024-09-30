@@ -31,7 +31,9 @@ struct AppearanceConfigurator: Configurator {
 
 private extension AppearanceConfigurator {
   func setupApplicationTheme() {
-    UIApplication.currentWindow?.overrideUserInterfaceStyle = .light
+    if #available(iOS 13.0, *) {
+      UIApplication.currentWindow?.overrideUserInterfaceStyle = .light
+    }
   }
   
   func setupTabBarAppearance() {
@@ -50,21 +52,23 @@ private extension AppearanceConfigurator {
   }
   
   func setupNavigationBarAppearance() {
-    let appearance = UINavigationBarAppearance()
-    appearance.configureWithDefaultBackground()
-    appearance.backgroundColor = FDStyleAsset.onyx.color.withAlphaComponent(0.99)
-    appearance.shadowColor = .clear
-    appearance.shadowImage = UIImage()
-    UINavigationBar.appearance().standardAppearance = appearance
-    UINavigationBar.appearance().compactAppearance = appearance
-    UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    if #available(iOS 15.0, *) {
-      UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
+    if #available(iOS 13.0, *) {
+      let appearance = UINavigationBarAppearance()
+      appearance.configureWithDefaultBackground()
+      appearance.backgroundColor = FDStyleAsset.onyx.color.withAlphaComponent(0.99)
+      appearance.shadowColor = .clear
+      appearance.shadowImage = UIImage()
+      UINavigationBar.appearance().standardAppearance = appearance
+      UINavigationBar.appearance().compactAppearance = appearance
+      UINavigationBar.appearance().scrollEdgeAppearance = appearance
+      if #available(iOS 15.0, *) {
+        UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
+      }
+      UINavigationBar.appearance().isTranslucent = true
+      UINavigationBar.appearance().titleTextAttributes = textAttributes
+      UINavigationBar.appearance().tintColor = FDStyleAsset.constantAzure.color
+      UINavigationBar.appearance().barTintColor = FDStyleAsset.onyx.color.withAlphaComponent(0.99)
     }
-    UINavigationBar.appearance().isTranslucent = true
-    UINavigationBar.appearance().titleTextAttributes = textAttributes
-    UINavigationBar.appearance().tintColor = FDStyleAsset.constantAzure.color
-    UINavigationBar.appearance().barTintColor = FDStyleAsset.onyx.color.withAlphaComponent(0.99)
   }
   
   func setupBarButtonItemAppearance() {

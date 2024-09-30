@@ -16,7 +16,7 @@ public enum Constants {
   static public let developmentRegion = "en"
 
   // Settings
-  static public let iOSTargetVersion = "13.0"
+  static public let iOSTargetVersion = "12.0"
   static public let developmentTeam = "34VDSPZYU9"
   
   /// If you pass the key `PRODUCT_BUNDLE_IDENTIFIER` in settings, this method can set additional name for you.

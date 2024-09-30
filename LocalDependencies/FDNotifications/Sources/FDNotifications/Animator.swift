@@ -222,20 +222,30 @@ private extension Animator {
 
 private extension UIApplication {
   var topMostViewController: UIViewController? {
-    // Получаем активную сцену
-    guard let activeScene = connectedScenes.first(where: {
-      $0.activationState == .foregroundActive
-    }) as? UIWindowScene else {
-      return nil
+    // Для iOS 13 и выше
+    if #available(iOS 13.0, *) {
+      guard let activeScene = connectedScenes.first(where: {
+        $0.activationState == .foregroundActive
+      }) as? UIWindowScene else {
+        return nil
+      }
+      // Получаем корневой контроллер у активного окна
+      guard let rootViewController = activeScene.windows
+        .first(where: { $0.isKeyWindow })?.rootViewController else {
+        return nil
+      }
+      return rootViewController.topMostViewController
+    } else {
+      // Для iOS ниже 13
+      guard let keyWindow = UIApplication.shared.keyWindow else {
+        return nil
+      }
+      // Получаем корневой контроллер у ключевого окна
+      guard let rootViewController = keyWindow.rootViewController else {
+        return nil
+      }
+      return rootViewController.topMostViewController
     }
-    
-    // Получаем корневой контроллер у активного окна
-    guard let rootViewController = activeScene.windows
-      .first(where: { $0.isKeyWindow })?.rootViewController else {
-      return nil
-    }
-    
-    return rootViewController.topMostViewController
   }
 }
 
@@ -292,9 +302,13 @@ private extension Animator {
 private extension UIApplication {
   /// Возвращает текущее активное окно приложения.
   static var currentWindow: UIWindow? {
-    return UIApplication.shared.connectedScenes
-      .compactMap { $0 as? UIWindowScene }
-      .flatMap { $0.windows }
-      .first(where: { $0.isKeyWindow })
+    if #available(iOS 13.0, *) {
+      return UIApplication.shared.connectedScenes
+        .compactMap { $0 as? UIWindowScene }
+        .flatMap { $0.windows }
+        .first(where: { $0.isKeyWindow })
+    } else {
+      return UIApplication.shared.keyWindow
+    }
   }
 }

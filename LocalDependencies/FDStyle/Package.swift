@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "FDStyle",
   defaultLocalization: "en",
-  platforms: [.iOS(.v13)],
+  platforms: [.iOS(.v12)],
   products: [
     .library(
       name: "FDStyle",
