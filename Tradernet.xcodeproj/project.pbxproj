@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8C19E426089A6BB873290D /* MainScreenCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C151A187D86AE119A607E3E /* MainScreenCoordinatorAssembly.swift */; };
+		135CFE35B212165E06407818 /* MainScreenAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4B66C913E5B6EB10095607 /* MainScreenAbstractions.swift */; };
+		1B8A79472CAB4A5F0023C5F1 /* ApplicationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A79462CAB4A5F0023C5F1 /* ApplicationServices.swift */; };
+		2D5F9D3C3ED131BE9C679C73 /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204DB714941C3AFC4D581F8 /* MainScreenCoordinator.swift */; };
 		3B360F8F646D602CFEE82025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33D5BD9C18EF15FD3D0949F /* LaunchScreen.storyboard */; };
+		3F810AD525B0B01123CC4249 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EAEFC73FAF83D6EB174C07 /* MainScreenViewController.swift */; };
 		422E25D9C61113CDEB94350B /* FDStyle_FDStyle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */; };
 		430485E199D9DCBD30D57281 /* FDServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7892C15A72E81065969DCF14 /* FDServices.framework */; };
 		474CC0C301D95534EE22B0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D235C39B7D5FCDF3B7C1290D /* Assets.xcassets */; };
@@ -16,19 +21,19 @@
 		5BF767A23B2E9B1AB993AB88 /* FDStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC7F5FDD98C840C9CB40B1 /* FDStyle.framework */; };
 		6297D6D06D65113135354054 /* FDAbstractions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C739BCDEF3201981D84E6B9F /* FDAbstractions.framework */; };
 		6A81BDC2C05C5D901256CC9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8121788DF8D5F0FF1E37308 /* Test.swift */; };
-		6E88EC1D19ACBA9028CB2F61 /* FDUIKit_FDUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */; };
-		7B151FDB688A981BB7C0B9A5 /* FDAbstractions_FDAbstractions.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5717DF47CCE1DA93D1D9FC12 /* FDAbstractions_FDAbstractions.bundle */; };
+		6CE6864697E22100CBAE3953 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C68FA4A707CD70B15C0B /* MainScreenAssembly.swift */; };
+		7F837C654A9FAEBB4A065398 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AC9E950E83ED6222764C5 /* MainScreenInteractor.swift */; };
 		8C3FA9B64B7C133E36BF18CB /* FDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE04797C53D28AB323211277 /* FDUIKit.framework */; };
 		8C88C7FD54ECB59B12F73274 /* TuistAssets+Tradernet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51452048D1F2F1623504DE49 /* TuistAssets+Tradernet.swift */; };
-		8D7822BE8C7E1C8F06C5E0EF /* FDNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A159A27F06C61F0801D90E /* FDNetwork.framework */; };
 		9FA37AFF5FC3FAD769C4C396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A7998516330B33EFD162 /* AppDelegate.swift */; };
-		A7B3C2D8E201612BCDB8C5CE /* FDUIKit_FDUIKit.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */; };
-		ABF482ABA6E332D649F75FA6 /* FDAbstractions_FDAbstractions.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 5717DF47CCE1DA93D1D9FC12 /* FDAbstractions_FDAbstractions.bundle */; };
 		BDEF758D9C7DE65206B4F6BB /* FDNotifications_FDNotifications.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 3436C4609DABA165012D4036 /* FDNotifications_FDNotifications.bundle */; };
 		C4ABEABF0EAB5E604E0028B7 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96CCAF174E97184FA6B238 /* AppearanceConfigurator.swift */; };
-		C81922F2C60720F117FB8951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71823BA6FF5F71EA6D0BA8A /* SceneDelegate.swift */; };
+		C6C49FF37193A04FAB2E57FA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC9D45829C70E09956A91B /* Starscream.framework */; };
 		D880CFDD6B0251467E7C045B /* FDStyle_FDStyle.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */; };
+		DDF1DE0083AAF0E658FAEA0F /* MainScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67CC6B5C7352B643C6E5BB4 /* MainScreenFactory.swift */; };
+		EBB7F4312E73F8E6E85D49BA /* Starscream_Starscream.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ED820F521349684A7ED1FCD /* Starscream_Starscream.bundle */; };
 		EBDEBD7B69A4CD77EB1DA45E /* FDFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99068017873A81571C77D826 /* FDFoundation.framework */; };
+		F5C23C1A78CF289682234071 /* Starscream_Starscream.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 8ED820F521349684A7ED1FCD /* Starscream_Starscream.bundle */; };
 		FC210EA26C004CFAAF968AB7 /* FDNotifications_FDNotifications.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3436C4609DABA165012D4036 /* FDNotifications_FDNotifications.bundle */; };
 /* End PBXBuildFile section */
 
@@ -58,10 +63,9 @@
 			buildActionMask = 8;
 			dstSubfolderSpec = 16;
 			files = (
-				ABF482ABA6E332D649F75FA6 /* FDAbstractions_FDAbstractions.bundle in Dependencies */,
 				BDEF758D9C7DE65206B4F6BB /* FDNotifications_FDNotifications.bundle in Dependencies */,
 				D880CFDD6B0251467E7C045B /* FDStyle_FDStyle.bundle in Dependencies */,
-				A7B3C2D8E201612BCDB8C5CE /* FDUIKit_FDUIKit.bundle in Dependencies */,
+				F5C23C1A78CF289682234071 /* Starscream_Starscream.bundle in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -81,6 +85,7 @@
 /* Begin PBXFileReference section */
 		07ABD3C755853B88A249892F /* TradernetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TradernetTests-Info.plist"; sourceTree = "<group>"; };
 		0940DE28CC3CBE4036A883C2 /* Tradernet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tradernet-Info.plist"; sourceTree = "<group>"; };
+		1B8A79462CAB4A5F0023C5F1 /* ApplicationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServices.swift; sourceTree = "<group>"; };
 		208AE425EE609A6211DE9650 /* TuistBundle+Tradernet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Tradernet.swift"; sourceTree = "<group>"; };
 		29FA9A652BF7B8F7287B23A5 /* TradernetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradernetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D259616771A935FCCC13DC5 /* Tradernet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradernet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,21 +93,26 @@
 		3645460A4B109F6DE5687415 /* FDNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FC7F5FDD98C840C9CB40B1 /* FDStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51452048D1F2F1623504DE49 /* TuistAssets+Tradernet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Tradernet.swift"; sourceTree = "<group>"; };
-		5717DF47CCE1DA93D1D9FC12 /* FDAbstractions_FDAbstractions.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDAbstractions_FDAbstractions.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDUIKit_FDUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDStyle_FDStyle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7892C15A72E81065969DCF14 /* FDServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82A159A27F06C61F0801D90E /* FDNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EAEFC73FAF83D6EB174C07 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		8C151A187D86AE119A607E3E /* MainScreenCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		8DB7C68FA4A707CD70B15C0B /* MainScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAssembly.swift; sourceTree = "<group>"; };
+		8ED820F521349684A7ED1FCD /* Starscream_Starscream.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Starscream_Starscream.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		99068017873A81571C77D826 /* FDFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E3A7998516330B33EFD162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A71823BA6FF5F71EA6D0BA8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B8121788DF8D5F0FF1E37308 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		C204DB714941C3AFC4D581F8 /* MainScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinator.swift; sourceTree = "<group>"; };
 		C421435EB5BFDE5CA75DE5E8 /* Tradernet.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tradernet.xcconfig; sourceTree = "<group>"; };
+		C67CC6B5C7352B643C6E5BB4 /* MainScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenFactory.swift; sourceTree = "<group>"; };
 		C739BCDEF3201981D84E6B9F /* FDAbstractions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDAbstractions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC96CCAF174E97184FA6B238 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		CD4B66C913E5B6EB10095607 /* MainScreenAbstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAbstractions.swift; sourceTree = "<group>"; };
 		D235C39B7D5FCDF3B7C1290D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE04797C53D28AB323211277 /* FDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33D5BD9C18EF15FD3D0949F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F34AC9E950E83ED6222764C5 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		FFCC9D45829C70E09956A91B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +129,11 @@
 			files = (
 				6297D6D06D65113135354054 /* FDAbstractions.framework in Frameworks */,
 				EBDEBD7B69A4CD77EB1DA45E /* FDFoundation.framework in Frameworks */,
-				8D7822BE8C7E1C8F06C5E0EF /* FDNetwork.framework in Frameworks */,
 				4A743B34B32111074C00D1D8 /* FDNotifications.framework in Frameworks */,
 				430485E199D9DCBD30D57281 /* FDServices.framework in Frameworks */,
 				5BF767A23B2E9B1AB993AB88 /* FDStyle.framework in Frameworks */,
 				8C3FA9B64B7C133E36BF18CB /* FDUIKit.framework in Frameworks */,
+				C6C49FF37193A04FAB2E57FA /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +150,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		1B8A79452CAB4A510023C5F1 /* ApplicationServices */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A79462CAB4A5F0023C5F1 /* ApplicationServices.swift */,
+			);
+			path = ApplicationServices;
+			sourceTree = "<group>";
+		};
 		20ACB5996A0DF6E48FE538DE /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +166,52 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		2C4490302702C155B6F3CC4D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F34AC9E950E83ED6222764C5 /* MainScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		414ACF14DF3CC0B0801F874F /* Tradernet */ = {
 			isa = PBXGroup;
 			children = (
 				011E6B02AA7E8427781B552E /* App */,
 			);
 			path = Tradernet;
+			sourceTree = "<group>";
+		};
+		506DBE2FC259F70DC10A3F50 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8A2A150AFBBCC12407F367C2 /* MainScreenCoordinator */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		563E41B0E7DDB91C54D684DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A0C4876DBE3BB7F1114199E5 /* MainScreenModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6B75C1EC8ECE660B47A42C35 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8DB7C68FA4A707CD70B15C0B /* MainScreenAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		6DA7C15D6233D969C670305D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C67CC6B5C7352B643C6E5BB4 /* MainScreenFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		74142E3F21ECAFA836B5B653 /* Sources */ = {
@@ -192,6 +250,15 @@
 			name = Project;
 			sourceTree = "<group>";
 		};
+		8A2A150AFBBCC12407F367C2 /* MainScreenCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C204DB714941C3AFC4D581F8 /* MainScreenCoordinator.swift */,
+				8C151A187D86AE119A607E3E /* MainScreenCoordinatorAssembly.swift */,
+			);
+			path = MainScreenCoordinator;
+			sourceTree = "<group>";
+		};
 		9FA577B9A53D95F5BCE6A0F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,9 +268,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A0C4876DBE3BB7F1114199E5 /* MainScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				D0950839BCEB2261CD415189 /* Abstractions */,
+				6B75C1EC8ECE660B47A42C35 /* Assembly */,
+				6DA7C15D6233D969C670305D /* Factory */,
+				2C4490302702C155B6F3CC4D /* Interactor */,
+				BA72C06552102B97129B7048 /* Presenter */,
+			);
+			path = MainScreenModule;
+			sourceTree = "<group>";
+		};
 		A0F615C806B75127EC8A103C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				563E41B0E7DDB91C54D684DF /* Modules */,
+				506DBE2FC259F70DC10A3F50 /* Navigation */,
 				E8FC452ABBD979CABC114004 /* System */,
 			);
 			path = Sources;
@@ -225,6 +306,14 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
+		BA72C06552102B97129B7048 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				86EAEFC73FAF83D6EB174C07 /* MainScreenViewController.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BF0BBF761FCD700A2E39F5C7 = {
 			isa = PBXGroup;
 			children = (
@@ -234,12 +323,20 @@
 			);
 			sourceTree = "<group>";
 		};
+		D0950839BCEB2261CD415189 /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				CD4B66C913E5B6EB10095607 /* MainScreenAbstractions.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
 		E8FC452ABBD979CABC114004 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				1B8A79452CAB4A510023C5F1 /* ApplicationServices */,
 				20ACB5996A0DF6E48FE538DE /* Configurator */,
 				A5E3A7998516330B33EFD162 /* AppDelegate.swift */,
-				A71823BA6FF5F71EA6D0BA8A /* SceneDelegate.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -255,17 +352,16 @@
 		FD5BF2A73B51D4108E655D2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5717DF47CCE1DA93D1D9FC12 /* FDAbstractions_FDAbstractions.bundle */,
 				C739BCDEF3201981D84E6B9F /* FDAbstractions.framework */,
 				99068017873A81571C77D826 /* FDFoundation.framework */,
-				82A159A27F06C61F0801D90E /* FDNetwork.framework */,
 				3436C4609DABA165012D4036 /* FDNotifications_FDNotifications.bundle */,
 				3645460A4B109F6DE5687415 /* FDNotifications.framework */,
 				7892C15A72E81065969DCF14 /* FDServices.framework */,
 				70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */,
 				42FC7F5FDD98C840C9CB40B1 /* FDStyle.framework */,
-				68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */,
 				EE04797C53D28AB323211277 /* FDUIKit.framework */,
+				8ED820F521349684A7ED1FCD /* Starscream_Starscream.bundle */,
+				FFCC9D45829C70E09956A91B /* Starscream.framework */,
 				2D259616771A935FCCC13DC5 /* Tradernet.app */,
 				29FA9A652BF7B8F7287B23A5 /* TradernetTests.xctest */,
 			);
@@ -354,10 +450,9 @@
 			files = (
 				474CC0C301D95534EE22B0CB /* Assets.xcassets in Resources */,
 				3B360F8F646D602CFEE82025 /* LaunchScreen.storyboard in Resources */,
-				7B151FDB688A981BB7C0B9A5 /* FDAbstractions_FDAbstractions.bundle in Resources */,
 				FC210EA26C004CFAAF968AB7 /* FDNotifications_FDNotifications.bundle in Resources */,
 				422E25D9C61113CDEB94350B /* FDStyle_FDStyle.bundle in Resources */,
-				6E88EC1D19ACBA9028CB2F61 /* FDUIKit_FDUIKit.bundle in Resources */,
+				EBB7F4312E73F8E6E85D49BA /* Starscream_Starscream.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +494,16 @@
 			files = (
 				8C88C7FD54ECB59B12F73274 /* TuistAssets+Tradernet.swift in Sources */,
 				4A187EA892FC4A1C44CD305E /* TuistBundle+Tradernet.swift in Sources */,
+				135CFE35B212165E06407818 /* MainScreenAbstractions.swift in Sources */,
+				6CE6864697E22100CBAE3953 /* MainScreenAssembly.swift in Sources */,
+				DDF1DE0083AAF0E658FAEA0F /* MainScreenFactory.swift in Sources */,
+				7F837C654A9FAEBB4A065398 /* MainScreenInteractor.swift in Sources */,
+				3F810AD525B0B01123CC4249 /* MainScreenViewController.swift in Sources */,
+				2D5F9D3C3ED131BE9C679C73 /* MainScreenCoordinator.swift in Sources */,
+				1B8A79472CAB4A5F0023C5F1 /* ApplicationServices.swift in Sources */,
+				0F8C19E426089A6BB873290D /* MainScreenCoordinatorAssembly.swift in Sources */,
 				9FA37AFF5FC3FAD769C4C396 /* AppDelegate.swift in Sources */,
 				C4ABEABF0EAB5E604E0028B7 /* AppearanceConfigurator.swift in Sources */,
-				C81922F2C60720F117FB8951 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +539,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TARGET_PARALLELIZATION = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/Tradernet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sosinvitalii.Tradernet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,7 +626,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Derived/InfoPlists/TradernetTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,7 +704,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sosinvitalii.Tradernet;
@@ -626,7 +728,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TARGET_PARALLELIZATION = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/Tradernet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -651,7 +753,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Derived/InfoPlists/TradernetTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
