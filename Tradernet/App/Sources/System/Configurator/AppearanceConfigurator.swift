@@ -6,9 +6,10 @@
 //  Copyright © 2024 SosinVitalii.com. All rights reserved.
 //
 
-import FDAbstractions
 import UIKit
+import FDUIKit
 import FDStyle
+import FDAbstractions
 
 struct AppearanceConfigurator: Configurator {
   
@@ -19,6 +20,7 @@ struct AppearanceConfigurator: Configurator {
   // MARK: - Internal func
   
   func configure() {
+    setupApplicationTheme()
     setupTabBarAppearance()
     setupNavigationBarAppearance()
     setupBarButtonItemAppearance()
@@ -28,6 +30,10 @@ struct AppearanceConfigurator: Configurator {
 // MARK: - Private
 
 private extension AppearanceConfigurator {
+  func setupApplicationTheme() {
+    UIApplication.currentWindow?.overrideUserInterfaceStyle = .light
+  }
+  
   func setupTabBarAppearance() {
     UITabBar.appearance().tintColor = FDStyleAsset.constantAzure.color
     UITabBar.appearance().unselectedItemTintColor = FDStyleAsset.constantSlate.color
