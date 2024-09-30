@@ -12,7 +12,7 @@ import UIKit
 typealias MainScreenCoordinatorProtocol = Coordinator<Void, Void>
 
 /// Сборщик экрана `MainScreen`
-typealias MainScreenCoordinatorAssemblyClosure = () -> MainScreenCoordinatorProtocol
+typealias MainScreenCoordinatorAssemblyClosure = (_ services: IApplicationServices) -> MainScreenCoordinatorProtocol
 
 // MARK: - MainScreenCoordinator
 

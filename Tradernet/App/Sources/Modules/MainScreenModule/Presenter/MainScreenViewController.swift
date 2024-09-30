@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FDAbstractions
 
 /// Презентер
 final class MainScreenViewController: MainScreenModule {
@@ -40,13 +41,24 @@ final class MainScreenViewController: MainScreenModule {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .red
+    moduleView.showLoaderView(true)
+    interactor.start()
+    setupNavigation()
   }
 }
 
 // MARK: - MainScreenInteractorOutput
 
-extension MainScreenViewController: MainScreenInteractorOutput {}
+extension MainScreenViewController: MainScreenInteractorOutput {
+  func didReceiveQuoteData(_ quoteData: QuoteData) {
+    moduleView.showLoaderView(false)
+    // TODO: - Обновить UI
+  }
+  
+  func didReceiveError(_ error: Error) {
+    interactor.showNotification(.negative(title: error.localizedDescription))
+  }
+}
 
 // MARK: - MainScreenFactoryOutput
 
@@ -54,10 +66,17 @@ extension MainScreenViewController: MainScreenFactoryOutput {}
 
 // MARK: - Private
 
-private extension MainScreenViewController {}
+private extension MainScreenViewController {
+  func setupNavigation() {
+    navigationItem.title = Appearance().title
+    navigationItem.largeTitleDisplayMode = .always
+  }
+}
 
 // MARK: - Appearance
 
 private extension MainScreenViewController {
-  struct Appearance {}
+  struct Appearance {
+    let title = "Tradernet"
+  }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FDAbstractions
 
 /// Сборщик `MainScreen`
 public final class MainScreenAssembly {
@@ -14,8 +15,8 @@ public final class MainScreenAssembly {
   
   /// Собирает модуль `MainScreen`
   /// - Returns: Cобранный модуль `MainScreen`
-  public func createModule() -> MainScreenModule {
-    let interactor = MainScreenInteractor()
+  public func createModule(services: IApplicationServices) -> MainScreenModule {
+    let interactor = MainScreenInteractor(services: services)
     let factory = MainScreenFactory()
     let presenter = MainScreenViewController(
       interactor: interactor,

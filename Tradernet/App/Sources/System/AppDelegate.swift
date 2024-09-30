@@ -19,6 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelega
   
   // MARK: - Private properties
   
+  private let services: IApplicationServices = ApplicationServices()
   private var mainScreenCoordinator: MainScreenCoordinatorProtocol?
   
   // MARK: - Internal func
@@ -75,10 +76,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelega
   }
   
   private func setupMainCoordinator() {
-    let mainScreenCoordinatorAssembly: MainScreenCoordinatorAssemblyClosure = {
-      MainScreenCoordinatorAssembly().createCoordinator()
+    let mainScreenCoordinatorAssembly: MainScreenCoordinatorAssemblyClosure = { services in
+      MainScreenCoordinatorAssembly().createCoordinator(services: services)
     }
-    self.mainScreenCoordinator = mainScreenCoordinatorAssembly()
+    self.mainScreenCoordinator = mainScreenCoordinatorAssembly(services)
     configurators().configure()
     window?.makeKeyAndVisible()
     mainScreenCoordinator?.start()

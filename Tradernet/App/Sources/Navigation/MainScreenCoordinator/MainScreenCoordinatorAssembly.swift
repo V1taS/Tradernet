@@ -18,10 +18,10 @@ final class MainScreenCoordinatorAssembly {
   ///   - container: Контейнер для получения зависимостей из Swinject
   ///   - navigationController: Навигейшн контроллер
   /// - Returns: Координатор для создания нового платежа
-  func createCoordinator() -> MainScreenCoordinatorProtocol {
+  func createCoordinator(services: IApplicationServices) -> MainScreenCoordinatorProtocol {
     return MainScreenCoordinator(
       moduleAssembly: {
-        MainScreenAssembly().createModule()
+        MainScreenAssembly().createModule(services: services)
       }
     )
   }

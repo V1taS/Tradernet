@@ -218,7 +218,10 @@ private extension BaseTableView {
       tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
       tableView.topAnchor.constraint(equalTo: topAnchor),
       tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-      tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+      tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+      
+      loaderView.centerXAnchor.constraint(equalTo: centerXAnchor),
+      loaderView.centerYAnchor.constraint(equalTo: centerYAnchor)
     ])
   }
   

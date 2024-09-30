@@ -8,9 +8,8 @@
 import Foundation
 
 /// Протокол сервиса для получения котировок
-public protocol QuoteServiceProtocol {
+public protocol IQuoteService {
   /// Запуск сервиса
-  ///
   /// - Parameters:
   ///   - tickers: Массив тикеров для подписки
   ///   - onDataReceived: Замыкание, вызываемое при получении новых данных

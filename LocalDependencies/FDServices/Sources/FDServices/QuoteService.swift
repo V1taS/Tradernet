@@ -10,7 +10,7 @@ import Starscream
 import FDAbstractions
 
 /// Сервис для получения котировок
-public final class QuoteService: QuoteServiceProtocol, WebSocketDelegate {
+public final class QuoteService: IQuoteService, WebSocketDelegate {
   public init() {}
   
   // MARK: - Private properties
