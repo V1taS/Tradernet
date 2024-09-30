@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FDUIKit
 
 /// События которые отправляем из `MainScreenModule` в `Coordinator`
 public protocol MainScreenModuleOutput: AnyObject {}
@@ -18,7 +19,7 @@ public protocol MainScreenModuleInput {
 }
 
 /// Готовый модуль `MainScreenModule`
-public typealias MainScreenModule = UIViewController & MainScreenModuleInput
+public typealias MainScreenModule = BaseViewController & MainScreenModuleInput
 
 /// Сборщик модуля `MainScreenModule`
 public typealias MainScreenModuleAssembly = () -> MainScreenModule
