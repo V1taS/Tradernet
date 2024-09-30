@@ -18,6 +18,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
   // MARK: - Private properties
   
+  private var mainScreenCoordinator: MainScreenCoordinatorProtocol?
+  
   // MARK: - Internal func
   
   func application(
@@ -36,10 +38,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     options connectionOptions: UIScene.ConnectionOptions
   ) {
     guard let windowScene = scene as? UIWindowScene else { return }
+    let mainScreenCoordinatorAssembly: MainScreenCoordinatorAssemblyClosure = {
+      MainScreenCoordinatorAssembly().createCoordinator()
+    }
+    self.mainScreenCoordinator = mainScreenCoordinatorAssembly()
+    
+    configurators().configure()
     window = UIWindow(windowScene: windowScene)
     window?.makeKeyAndVisible()
     
-    configurators().configure()
+    mainScreenCoordinator?.start()
   }
 }
 
