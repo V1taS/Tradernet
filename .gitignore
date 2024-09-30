@@ -30,7 +30,6 @@ DerivedData/
 
 ## Playgrounds
 timeline.xctimeline
-playground.xcworkspace
 
 # Swift Package Manager
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
@@ -40,8 +39,6 @@ Package.pins
 
 # CocoaPods
 Pods/
-# Add this line if you want to avoid checking in source code from the Xcode workspace
- *.xcworkspace
 
  ## Accio dependency management
 Tuist/Dependencies/*
@@ -61,8 +58,6 @@ Tuist/Dependencies/*
 Derived
 graph.png
 derived_data
-Tradernet.xcodeproj
-Tradernet.xcworkspace
 Tuist/Package.resolved
 Tuist/Dependencies/graph.json
 LocalDependencies/FDAbstractions/FDAbstractions.xcodeproj

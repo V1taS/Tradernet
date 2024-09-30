@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Tradernet.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:LocalDependencies"
+      name = "LocalDependencies">
+      <FileRef
+         location = "group:FDAbstractions/FDAbstractions.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDFoundation/FDFoundation.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDNetwork/FDNetwork.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDNotifications/FDNotifications.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDServices/FDServices.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDStyle/FDStyle.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:FDUIKit/FDUIKit.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
