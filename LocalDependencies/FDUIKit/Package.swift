@@ -15,16 +15,14 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../../LocalDependencies/FDStyle"),
-    .package(path: "../../LocalDependencies/FDAbstractions"),
-    .package(path: "../../LocalDependencies/FDFoundation")
+    .package(path: "../../LocalDependencies/FDAbstractions")
   ],
   targets: [
     .target(
       name: "FDUIKit",
       dependencies: [
         "FDStyle",
-        "FDAbstractions",
-        "FDFoundation"
+        "FDAbstractions"
       ]
     )
   ]

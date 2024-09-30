@@ -46,7 +46,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelega
     options: UIScene.ConnectionOptions
   ) -> UISceneConfiguration {
     let sceneConfig = UISceneConfiguration(name: nil, sessionRole: connectingSceneSession.role)
-    sceneConfig.delegateClass = Self.self // Используем AppDelegate как делегат сцены
+    sceneConfig.delegateClass = Self.self
     return sceneConfig
   }
   

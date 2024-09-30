@@ -11,9 +11,6 @@
          location = "group:FDAbstractions/FDAbstractions.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:FDFoundation/FDFoundation.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:FDNotifications/FDNotifications.xcodeproj">
       </FileRef>
       <FileRef

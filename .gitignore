@@ -61,7 +61,6 @@ derived_data
 Tuist/Package.resolved
 Tuist/Dependencies/graph.json
 LocalDependencies/FDAbstractions/FDAbstractions.xcodeproj
-LocalDependencies/FDFoundation/FDFoundation.xcodeproj
 LocalDependencies/FDNetwork/FDNetwork.xcodeproj
 LocalDependencies/FDNotifications/FDNotifications.xcodeproj
 LocalDependencies/FDServices/FDServices.xcodeproj
