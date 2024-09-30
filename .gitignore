@@ -67,3 +67,5 @@ LocalDependencies/FDNotifications/FDNotifications.xcodeproj
 LocalDependencies/FDServices/FDServices.xcodeproj
 LocalDependencies/FDStyle/FDStyle.xcodeproj
 LocalDependencies/FDUIKit/FDUIKit.xcodeproj
+LocalDependencies/FDServices/Package.resolved
+Tradernet.xcworkspace

@@ -18,7 +18,7 @@ let package = Package(
     .package(path: "../../LocalDependencies/FDAbstractions"),
     .package(path: "../../LocalDependencies/FDFoundation"),
     .package(path: "../../LocalDependencies/FDNotifications"),
-    .package(path: "../../LocalDependencies/FDNetwork")
+    .package(url: "https://github.com/daltoniam/Starscream.git", exact: "4.0.8"),
   ],
   targets: [
     .target(
@@ -28,7 +28,7 @@ let package = Package(
         "FDAbstractions",
         "FDFoundation",
         "FDNotifications",
-        "FDNetwork"
+        "Starscream"
       ]
     ),
     .testTarget(
