@@ -30,6 +30,12 @@ extension QuoteCard {
       stackView.axis = .horizontal
       return stackView
     }()
+    private let mainVerticalStackView: UIStackView = {
+      let stackView = UIStackView()
+      stackView.axis = .vertical
+      return stackView
+    }()
+    
     private let rightSideImageView: UIImageView = {
       let imageView = UIImageView()
       imageView.contentMode = .scaleAspectFit
@@ -49,12 +55,13 @@ extension QuoteCard {
     }()
     private let leftSideTitleLabel: UILabel = {
       let label = UILabel()
-      label.font = .fancy.text.title
+      label.font = .fancy.text.regularMedium
       label.textColor = FDStyleAsset.constantNavy.color
       return label
     }()
     private let rightSideTitleLabel: LabelGradientView = {
       let label = LabelGradientView()
+      label
       return label
     }()
     
@@ -103,13 +110,15 @@ extension QuoteCard {
       rightSideDescription: String
     ) {
       leftSideImageView.image = leftSideImage
+      leftSideImageView.isHidden = leftSideImage == nil
+      
       leftSideTitleLabel.text = leftSideTitle
       leftSideDescriptionLabel.text = leftSideDescription
       rightSideDescriptionLabel.text = rightSideDescription
       
       rightSideTitleLabel.configureWith(
         titleText: rightSideTitle,
-        font: .fancy.text.title,
+        font: .fancy.text.regularMedium,
         textColor: rightSideTitleStyle.textColor,
         gradientDVLabel: [
           rightSideTitleStyle.backgroundBubbleColor,
@@ -124,17 +133,21 @@ extension QuoteCard {
 
 private extension QuoteCard.View {
   func configureLayout() {
-    [firstLineHorizontalStackView, secondLineHorizontalStackView, rightSideImageView].forEach {
+    [firstLineHorizontalStackView, secondLineHorizontalStackView].forEach {
+      $0.translatesAutoresizingMaskIntoConstraints = false
+      mainVerticalStackView.addArrangedSubview($0)
+    }
+    [mainVerticalStackView, rightSideImageView].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
       mainHorizontalStackView.addArrangedSubview($0)
     }
     [leftSideImageView, leftSideTitleLabel, UIView(), rightSideTitleLabel].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
-      firstLineHorizontalStackView.addSubview($0)
+      firstLineHorizontalStackView.addArrangedSubview($0)
     }
     [leftSideDescriptionLabel, UIView(), rightSideDescriptionLabel].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
-      secondLineHorizontalStackView.addSubview($0)
+      secondLineHorizontalStackView.addArrangedSubview($0)
     }
     [mainHorizontalStackView].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
@@ -142,14 +155,18 @@ private extension QuoteCard.View {
     }
     
     NSLayoutConstraint.activate([
-      mainHorizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-      mainHorizontalStackView.topAnchor.constraint(equalTo: topAnchor),
-      mainHorizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-      mainHorizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+      mainHorizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: .s4),
+      mainHorizontalStackView.topAnchor.constraint(equalTo: topAnchor, constant: .s2),
+      mainHorizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -.s4),
+      mainHorizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -.s2),
       
       leftSideImageView.widthAnchor.constraint(equalToConstant: .s6),
       leftSideImageView.heightAnchor.constraint(equalToConstant: .s6),
-      rightSideImageView.heightAnchor.constraint(equalToConstant: .s6)
+      rightSideImageView.heightAnchor.constraint(equalToConstant: .s5),
+      rightSideImageView.widthAnchor.constraint(equalToConstant: .s5),
+      rightSideTitleLabel.trailingAnchor.constraint(equalTo: rightSideImageView.leadingAnchor, constant: -.s1),
+      secondLineHorizontalStackView.trailingAnchor.constraint(equalTo: rightSideImageView.leadingAnchor, constant: -.s2),
+      heightAnchor.constraint(equalToConstant: .s17)
     ])
   }
   

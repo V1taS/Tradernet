@@ -71,10 +71,10 @@ private extension QuoteCard.Cell {
     }
     
     NSLayoutConstraint.activate([
-      quoteCardView.leadingAnchor.constraint(equalTo: leadingAnchor),
-      quoteCardView.topAnchor.constraint(equalTo: topAnchor),
-      quoteCardView.trailingAnchor.constraint(equalTo: trailingAnchor),
-      quoteCardView.bottomAnchor.constraint(equalTo: bottomAnchor)
+      quoteCardView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+      quoteCardView.topAnchor.constraint(equalTo: contentView.topAnchor),
+      quoteCardView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+      quoteCardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
     ])
   }
 }

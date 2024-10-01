@@ -22,10 +22,12 @@
 		6297D6D06D65113135354054 /* FDAbstractions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C739BCDEF3201981D84E6B9F /* FDAbstractions.framework */; };
 		6A81BDC2C05C5D901256CC9F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8121788DF8D5F0FF1E37308 /* Test.swift */; };
 		6CE6864697E22100CBAE3953 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C68FA4A707CD70B15C0B /* MainScreenAssembly.swift */; };
+		6E88EC1D19ACBA9028CB2F61 /* FDUIKit_FDUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */; };
 		7F837C654A9FAEBB4A065398 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AC9E950E83ED6222764C5 /* MainScreenInteractor.swift */; };
 		8C3FA9B64B7C133E36BF18CB /* FDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE04797C53D28AB323211277 /* FDUIKit.framework */; };
 		8C88C7FD54ECB59B12F73274 /* TuistAssets+Tradernet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51452048D1F2F1623504DE49 /* TuistAssets+Tradernet.swift */; };
 		9FA37AFF5FC3FAD769C4C396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3A7998516330B33EFD162 /* AppDelegate.swift */; };
+		A7B3C2D8E201612BCDB8C5CE /* FDUIKit_FDUIKit.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */; };
 		BDEF758D9C7DE65206B4F6BB /* FDNotifications_FDNotifications.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 3436C4609DABA165012D4036 /* FDNotifications_FDNotifications.bundle */; };
 		C4ABEABF0EAB5E604E0028B7 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96CCAF174E97184FA6B238 /* AppearanceConfigurator.swift */; };
 		C6C49FF37193A04FAB2E57FA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC9D45829C70E09956A91B /* Starscream.framework */; };
@@ -64,6 +66,7 @@
 			files = (
 				BDEF758D9C7DE65206B4F6BB /* FDNotifications_FDNotifications.bundle in Dependencies */,
 				D880CFDD6B0251467E7C045B /* FDStyle_FDStyle.bundle in Dependencies */,
+				A7B3C2D8E201612BCDB8C5CE /* FDUIKit_FDUIKit.bundle in Dependencies */,
 				F5C23C1A78CF289682234071 /* Starscream_Starscream.bundle in Dependencies */,
 			);
 			name = Dependencies;
@@ -91,6 +94,7 @@
 		3645460A4B109F6DE5687415 /* FDNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FC7F5FDD98C840C9CB40B1 /* FDStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51452048D1F2F1623504DE49 /* TuistAssets+Tradernet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Tradernet.swift"; sourceTree = "<group>"; };
+		68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDUIKit_FDUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDStyle_FDStyle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7892C15A72E81065969DCF14 /* FDServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EAEFC73FAF83D6EB174C07 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 				7892C15A72E81065969DCF14 /* FDServices.framework */,
 				70A186C1E707DED6C90AB455 /* FDStyle_FDStyle.bundle */,
 				42FC7F5FDD98C840C9CB40B1 /* FDStyle.framework */,
+				68A4F750A66985FEDEC08C07 /* FDUIKit_FDUIKit.bundle */,
 				EE04797C53D28AB323211277 /* FDUIKit.framework */,
 				8ED820F521349684A7ED1FCD /* Starscream_Starscream.bundle */,
 				FFCC9D45829C70E09956A91B /* Starscream.framework */,
@@ -448,6 +453,7 @@
 				3B360F8F646D602CFEE82025 /* LaunchScreen.storyboard in Resources */,
 				FC210EA26C004CFAAF968AB7 /* FDNotifications_FDNotifications.bundle in Resources */,
 				422E25D9C61113CDEB94350B /* FDStyle_FDStyle.bundle in Resources */,
+				6E88EC1D19ACBA9028CB2F61 /* FDUIKit_FDUIKit.bundle in Resources */,
 				EBB7F4312E73F8E6E85D49BA /* Starscream_Starscream.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

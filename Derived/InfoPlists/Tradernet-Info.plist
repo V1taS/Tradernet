@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Tradernet</string>
+	<key>CFBundleExecutable</key>
+	<string>Tradernet</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.sosinvitalii.Tradernet</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>ru</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>Tradernet</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED</key>
+	<string>YES</string>
+	<key>CODE_SIGN_IDENTITY</key>
+	<string>iPhone Developer</string>
+	<key>CODE_SIGN_STYLE</key>
+	<string>Automatic</string>
+	<key>CURRENT_PROJECT_VERSION</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>DEVELOPMENT_TEAM</key>
+	<string>34VDSPZYU9</string>
+	<key>DISPLAY_NAME</key>
+	<string>Tradernet</string>
+	<key>DTPlatformName</key>
+	<string>iphoneos</string>
+	<key>DTPlatformVersion</key>
+	<string>12.0</string>
+	<key>ENABLE_BITCODE</key>
+	<string>NO</string>
+	<key>ENABLE_TESTABILITY</key>
+	<string>YES</string>
+	<key>INDENT_WIDTH</key>
+	<string>2</string>
+	<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+	<string>12.0</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.finance</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>MARKETING_VERSION</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>NSAccentColorName</key>
+	<string>AccentColor</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please provide access to the Camera</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Tradernet requires access to Face ID for quick and secure authentication.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Grant access to microphone to be able to take videos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please provide access to the Photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please provide access to the Photo Library</string>
+	<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+	<string>com.sosinvitalii.Tradernet</string>
+	<key>TAB_WIDTH</key>
+	<string>2</string>
+	<key>TARGETED_DEVICE_FAMILY</key>
+	<string>1</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIKeyboardDoesNotSupportHardwareKeyboard</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen.storyboard</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<true/>
+	<key>UITextInputTraitKeyboardAppearance</key>
+	<string>Default</string>
+	<key>UITextInputTraitSoftwareKeyboardBehavior</key>
+	<integer>1</integer>
+	<key>VALID_ARCHS</key>
+	<string>arm64</string>
+</dict>
+</plist>

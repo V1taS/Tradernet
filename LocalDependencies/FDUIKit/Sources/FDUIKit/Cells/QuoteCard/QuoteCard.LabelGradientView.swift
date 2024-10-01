@@ -106,9 +106,9 @@ private extension QuoteCard.LabelGradientView {
     let cornerRadius: CGFloat = 6
     let inset = UIEdgeInsets(
       top: 2,
-      left: 8,
+      left: .s1,
       bottom: 2,
-      right: 8
+      right: .s1
     )
   }
 }

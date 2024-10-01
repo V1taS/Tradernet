@@ -41,9 +41,12 @@ final class MainScreenViewController: MainScreenModule {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    moduleView.showLoaderView(true)
-    interactor.start()
+//    moduleView.showLoaderView(true)
+//    interactor.start()
     setupNavigation()
+    
+    let models = factory.createInitialElements()
+    moduleView.configure(models: models)
   }
 }
 
