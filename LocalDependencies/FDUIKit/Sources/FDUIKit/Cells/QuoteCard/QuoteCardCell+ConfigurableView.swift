@@ -13,7 +13,14 @@ extension QuoteCard.Cell: ConfigurableView {
   public func configure(with object: Any) {
     guard let cellModel = object as? QuoteCard.Model else { return }
     
-    configure()
+    configure(
+      leftSideImage: cellModel.leftSideImage,
+      leftSideTitle: cellModel.leftSideTitle,
+      leftSideDescription: cellModel.leftSideDescription,
+      rightSideTitle: cellModel.rightSideTitle,
+      rightSideTitleStyle: cellModel.rightSideTitleStyle,
+      rightSideDescription: cellModel.rightSideDescription
+    )
     separatorInset = .leftInfinite
   }
 }

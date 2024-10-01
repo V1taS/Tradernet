@@ -12,6 +12,10 @@ import UIKit
 extension QuoteCard {
   public final class Cell: UITableViewCell {
     
+    // MARK: - Private properties
+    
+    private let quoteCardView = QuoteCard.View()
+    
     // MARK: - Initialisation
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -29,7 +33,31 @@ extension QuoteCard {
     
     // MARK: - Public funcs
     
-    public func configure() {}
+    /// Конфигурация ячейки `QuoteCard`.
+    /// - Parameters:
+    ///   - leftSideImage: Изображение слевой стороны карточки.
+    ///   - leftSideTitle: Заголовок слевой стороны карточки.
+    ///   - leftSideDescription: Описание слевой стороны карточки.
+    ///   - rightSideTitle: Заголовок правой стороны карточки.
+    ///   - rightSideTitleStyle: Стиль заголовка правой стороны карточки.
+    ///   - rightSideDescription: Описание правой стороны карточки.
+    public func configure(
+      leftSideImage: UIImage?,
+      leftSideTitle: String,
+      leftSideDescription: String,
+      rightSideTitle: String,
+      rightSideTitleStyle: QuoteCard.Style,
+      rightSideDescription: String
+    ) {
+      quoteCardView.configure(
+        leftSideImage: leftSideImage,
+        leftSideTitle: leftSideTitle,
+        leftSideDescription: leftSideDescription,
+        rightSideTitle: rightSideTitle,
+        rightSideTitleStyle: rightSideTitleStyle,
+        rightSideDescription: rightSideDescription
+      )
+    }
   }
 }
 
@@ -37,7 +65,17 @@ extension QuoteCard {
 
 private extension QuoteCard.Cell {
   func makeConstraints() {
+    [quoteCardView].forEach {
+      $0.translatesAutoresizingMaskIntoConstraints = false
+      contentView.addSubview($0)
+    }
     
+    NSLayoutConstraint.activate([
+      quoteCardView.leadingAnchor.constraint(equalTo: leadingAnchor),
+      quoteCardView.topAnchor.constraint(equalTo: topAnchor),
+      quoteCardView.trailingAnchor.constraint(equalTo: trailingAnchor),
+      quoteCardView.bottomAnchor.constraint(equalTo: bottomAnchor)
+    ])
   }
 }
 
