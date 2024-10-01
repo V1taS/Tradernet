@@ -49,7 +49,7 @@ public final class QuoteService: IQuoteService, WebSocketDelegate {
   
   public func didReceive(event: Starscream.WebSocketEvent, client: any Starscream.WebSocketClient) {
     switch event {
-    case .connected(_):
+    case .connected:
       isConnected = true
       subscribeToQuotes()
     case let .disconnected(reason, code):
@@ -75,33 +75,45 @@ public final class QuoteService: IQuoteService, WebSocketDelegate {
 
 private extension QuoteService {
   func handleMessage(_ text: String) {
-    if let data = text.data(using: .utf8),
-       let jsonArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [Any],
-       let event = jsonArray.first as? String,
-       let payload = jsonArray.last as? [String: Any],
-       event == "q" {
-      
-      if let tickerString = payload["c"] as? String,
-         let ticker = Ticker(rawValue: tickerString),
-         let lastPrice = payload["ltp"] as? Double,
-         let changeInPoints = payload["chg"] as? Double,
-         let changeInPercent = payload["pcp"] as? Double,
-         let lastTradeExchange = payload["ltr"] as? String,
-         let name = payload["name"] as? String,
-         let lastTradeTime = payload["ltt"] as? String {
-        
-        let quoteData = QuoteData(
-          ticker: ticker,
-          lastPrice: lastPrice,
-          changeInPoints: changeInPoints,
-          changeInPercent: changeInPercent,
-          lastTradeExchange: lastTradeExchange,
-          name: name,
-          lastTradeTime: lastTradeTime
-        )
-        onDataReceived?(quoteData)
-      }
+    guard let data = text.data(using: .utf8) else {
+      return
     }
+    guard let jsonArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [Any] else {
+      return
+    }
+    guard jsonArray.count >= 2 else {
+      return
+    }
+    guard let event = jsonArray[0] as? String,
+          let payload = jsonArray[1] as? [String: Any],
+          event == "q" else {
+      return
+    }
+    
+    // Извлекаем обязательный тикер
+    guard let tickerString = payload["c"] as? String,
+          let ticker = Ticker(rawValue: tickerString),
+          let lastPrice = payload["ltp"] as? Double,
+          let changeInPoints = payload["chg"] as? Double,
+          let changeInPercent = payload["pcp"] as? Double else {
+      return
+    }
+    
+    let lastTradeExchange = payload["ltr"] as? String
+    let name = payload["name"] as? String
+    let lastTradeTime = payload["ltt"] as? String
+    
+    let quoteData = QuoteData(
+      ticker: ticker,
+      lastPrice: lastPrice,
+      changeInPoints: changeInPoints,
+      changeInPercent: changeInPercent,
+      lastTradeExchange: lastTradeExchange,
+      name: name,
+      lastTradeTime: lastTradeTime
+    )
+    
+    onDataReceived?(quoteData)
   }
   
   func subscribeToQuotes() {

@@ -157,13 +157,13 @@ private extension QuoteCard.View {
     NSLayoutConstraint.activate([
       mainHorizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: .s4),
       mainHorizontalStackView.topAnchor.constraint(equalTo: topAnchor, constant: .s2),
-      mainHorizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -.s4),
+      mainHorizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -.s2),
       mainHorizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -.s2),
       
       leftSideImageView.widthAnchor.constraint(equalToConstant: .s6),
       leftSideImageView.heightAnchor.constraint(equalToConstant: .s6),
-      rightSideImageView.heightAnchor.constraint(equalToConstant: .s5),
-      rightSideImageView.widthAnchor.constraint(equalToConstant: .s5),
+      rightSideImageView.heightAnchor.constraint(equalToConstant: .s4),
+      rightSideImageView.widthAnchor.constraint(equalToConstant: .s4),
       rightSideTitleLabel.trailingAnchor.constraint(equalTo: rightSideImageView.leadingAnchor, constant: -.s1),
       secondLineHorizontalStackView.trailingAnchor.constraint(equalTo: rightSideImageView.leadingAnchor, constant: -.s2),
       heightAnchor.constraint(equalToConstant: .s17)

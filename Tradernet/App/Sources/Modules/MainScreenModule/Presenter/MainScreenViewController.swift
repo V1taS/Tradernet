@@ -7,6 +7,7 @@
 
 import UIKit
 import FDAbstractions
+import FDUIKit
 
 /// Презентер
 final class MainScreenViewController: MainScreenModule {
@@ -41,12 +42,9 @@ final class MainScreenViewController: MainScreenModule {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    moduleView.showLoaderView(true)
-//    interactor.start()
+    moduleView.showLoaderView(true)
+    interactor.start()
     setupNavigation()
-    
-    let models = factory.createInitialElements()
-    moduleView.configure(models: models)
   }
 }
 
@@ -55,7 +53,7 @@ final class MainScreenViewController: MainScreenModule {
 extension MainScreenViewController: MainScreenInteractorOutput {
   func didReceiveQuoteData(_ quoteData: QuoteData) {
     moduleView.showLoaderView(false)
-    // TODO: - Обновить UI
+    factory.createInitialElements(quoteData)
   }
   
   func didReceiveError(_ error: Error) {
@@ -65,7 +63,18 @@ extension MainScreenViewController: MainScreenInteractorOutput {
 
 // MARK: - MainScreenFactoryOutput
 
-extension MainScreenViewController: MainScreenFactoryOutput {}
+extension MainScreenViewController: MainScreenFactoryOutput {
+  func didAddModels(_ models: [TableSectionModel]) {
+    moduleView.configure(models: models)
+  }
+  
+  func didUpdateModels(_ models: [TableSectionModel], updateModel: TableCellModel) {
+    guard let indexPath = models.firstIndexPath(ofModel: updateModel) else {
+      return
+    }
+    moduleView.reloadRows(at: [indexPath], with: .none, dataSource: models)
+  }
+}
 
 // MARK: - Private
 

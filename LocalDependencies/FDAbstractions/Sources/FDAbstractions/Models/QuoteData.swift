@@ -18,11 +18,11 @@ public struct QuoteData {
   /// Изменение в процентах относительно цены закрытия предыдущей торговой сессии
   public let changeInPercent: Double
   /// Биржа последней сделки
-  public let lastTradeExchange: String
+  public let lastTradeExchange: String?
   /// Название бумаги
-  public let name: String
+  public let name: String?
   /// Время последней сделки
-  public let lastTradeTime: String
+  public let lastTradeTime: String?
   
   /// Публичный инициализатор для структуры `QuoteData`
   /// - Parameters:
@@ -38,9 +38,9 @@ public struct QuoteData {
     lastPrice: Double,
     changeInPoints: Double,
     changeInPercent: Double,
-    lastTradeExchange: String,
-    name: String,
-    lastTradeTime: String
+    lastTradeExchange: String? = nil,
+    name: String? = nil,
+    lastTradeTime: String? = nil
   ) {
     self.ticker = ticker
     self.lastPrice = lastPrice

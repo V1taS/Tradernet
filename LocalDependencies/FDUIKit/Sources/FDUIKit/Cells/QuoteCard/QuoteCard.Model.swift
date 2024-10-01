@@ -27,7 +27,7 @@ extension QuoteCard {
     public let rightSideTitle: String
     
     /// Стиль заголовка правой стороны карточки
-    public let rightSideTitleStyle: QuoteCard.Style
+    public var rightSideTitleStyle: QuoteCard.Style
     
     /// Описание правой стороны карточки
     public let rightSideDescription: String

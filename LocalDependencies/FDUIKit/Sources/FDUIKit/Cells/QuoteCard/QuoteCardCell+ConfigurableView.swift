@@ -21,7 +21,7 @@ extension QuoteCard.Cell: ConfigurableView {
       rightSideTitleStyle: cellModel.rightSideTitleStyle,
       rightSideDescription: cellModel.rightSideDescription
     )
-    separatorInset = .leftInfinite
+    separatorInset = .longSeparatorInsets
   }
 }
 

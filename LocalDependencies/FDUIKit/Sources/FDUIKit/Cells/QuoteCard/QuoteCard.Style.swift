@@ -24,7 +24,7 @@ extension QuoteCard {
     /// Цвет фона пузырька
     public var backgroundBubbleColor: UIColor {
       switch self {
-      case .positive, .negative:
+      case .positive, .negative, .standart:
         return .clear
       case .positiveWithBubble:
         return FDStyleAsset.constantLime.color
@@ -42,9 +42,13 @@ extension QuoteCard {
         return FDStyleAsset.constantRuby.color
       case .positiveWithBubble, .negativeWithBubble:
         return FDStyleAsset.constantGhost.color
+      case .standart:
+        return FDStyleAsset.constantNavy.color
       }
     }
     
+    /// Положительный стиль
+    case standart
     /// Положительный стиль
     case positive
     /// Отрицательный стиль
